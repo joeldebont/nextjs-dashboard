@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    images: {
-        path: "/_next/image",
-    }
-};
+const nextConfig = {};
 
 module.exports = nextConfig;

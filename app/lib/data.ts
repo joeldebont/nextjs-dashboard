@@ -19,7 +19,6 @@ export async function fetchRevenue() {
   try {
     // Artificially delay a reponse for demo purposes.
     // Don't do this in real life :)
-    console.log('Fetching revenue data...');
     await new Promise((resolve) => setTimeout(resolve, 3000));
 
     const data = await sql<Revenue>`SELECT * FROM revenue`;
@@ -37,7 +36,6 @@ export async function fetchLatestInvoices() {
   try {
     // Artificially delay a reponse for demo purposes.
     // Don't do this in real life :)
-    console.log('Fetching latest invoices data...');
     await new Promise((resolve) => setTimeout(resolve, 2000));
 
     const data = await sql<LatestInvoiceRaw>`
@@ -64,7 +62,6 @@ export async function fetchCardData() {
   try {
     // Artificially delay a reponse for demo purposes.
     // Don't do this in real life :)
-    console.log('Fetching card data...');
     await new Promise((resolve) => setTimeout(resolve, 1000));
     // You can probably combine these into a single SQL query
     // However, we are intentionally splitting them to demonstrate
